@@ -150,7 +150,7 @@ function drawtablepygame() {
   // which is used to calculate the vertical draw position of the data
   let pos = 0;
   for (let [score, name] of highscores) {
-    screen.draw.text(score.toFixed(0), {
+    screen.draw.text(score.toFixed(), {
       topleft: [50, 100 + (pos * 50)],
       fontsize: 40
     });
